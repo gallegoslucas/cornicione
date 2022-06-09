@@ -70,7 +70,7 @@ body{
 
 .barramenu{
     width: 50%;
-    height: 23%;
+    height: 28%;
     display: flex;
     align-items:flex-end;
     justify-content:space-around;
@@ -99,7 +99,7 @@ border-radius: 15px;
 
 .flecha {
     width: 100%;
-    padding-top: 21%;
+    padding-top: 14%;
     display: flex;
     justify-content: center;
     animation: flechaabajo 1s ease infinite;
