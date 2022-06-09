@@ -946,11 +946,10 @@ body{
 
 /* MENU PIZZAS */
 
-.container {
+.container-pizzas {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
     grid-template-areas:
         "pizza1"
         "pizza2"
@@ -960,6 +959,7 @@ body{
     height: 100%;
     padding: 10% 5% 10% 5%;
     grid-row-gap: 40px;
+    justify-content: center;
 
 
 }
@@ -968,7 +968,7 @@ body{
     padding: 0;
     grid-area: pizza1;
     background-color: #cec877;
-    width: 400px;
+    width: 350px;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -979,7 +979,7 @@ body{
 .pizza1 .tarjetapizza {
     background-image: url(./imagenes/pizzas/calabresa.jpg);
     position: relative;
-    width: 100%;
+    width: 350px;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center center;
@@ -989,7 +989,7 @@ body{
 .pizza2 {
     grid-area: pizza2;
     background-color: #cec877;
-    width: 400px;
+    width: 350px;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -1000,7 +1000,7 @@ body{
 .pizza2 .tarjetapizza {
     background-image: url(./imagenes/pizzas/fugazzeta.jpg);
     position: relative;
-    width: 100%;
+    width: 350px;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center center;
@@ -1011,7 +1011,7 @@ body{
 .pizza3 {
     grid-area: pizza3;
     background-color: #cec877;
-    width: 400px;
+    width: 350px;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -1022,7 +1022,7 @@ body{
 .pizza3 .tarjetapizza {
     background-image: url(./imagenes/pizzas/marinara.jpg);
     position: relative;
-    width: 100%;
+    width: 350px;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center;
@@ -1033,7 +1033,7 @@ body{
 .pizza4 {
     grid-area: pizza4;
     background-color: #cec877;
-    width: 400px;
+    width: 350px;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -1044,7 +1044,7 @@ body{
 .pizza4 .tarjetapizza {
     background-image: url(./imagenes/pizzas/ruculaycrudo.jpg);
     position: relative;
-    width: 100%;
+    width: 350px;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center;
@@ -1111,7 +1111,7 @@ body{
     padding: 0;
     grid-area: pan1;
     background-color: #cec877;
-    width: 400px;
+    width: 350px;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -1122,8 +1122,7 @@ body{
 .pan1 .tarjetapan {
     background-image: url(./imagenes/panes/baguette.jpg);
     position: relative;
-    width: 100%;
-    height: 400px;
+    height: 350px;
     border-radius: 15px 15px 0 0;
     background-position: center center;
     background-size: cover;
@@ -1132,7 +1131,7 @@ body{
 .pan2 {
     grid-area: pan2;
     background-color: #cec877;
-    width: 400px;
+    width: 350px;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -1143,7 +1142,7 @@ body{
 .pan2 .tarjetapan {
     background-image: url(./imagenes/panes/focaccia.jpg);
     position: relative;
-    width: 100%;
+    width: 350px;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center center;
@@ -1154,7 +1153,7 @@ body{
 .pan3 {
     grid-area: pan3;
     background-color: #cec877;
-    width: 400px;
+    width: 350px;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -1165,7 +1164,7 @@ body{
 .pan3 .tarjetapan {
     background-image: url(./imagenes/panes/pandecampo.jpg);
     position: relative;
-    width: 100%;
+    width: 350px;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center;
