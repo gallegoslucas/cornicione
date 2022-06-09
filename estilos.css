@@ -92,10 +92,11 @@ body{
 
 .barramenu span a:hover{
 padding: 5px 10px;
-background-color: #cec877;
+background-color: #8b863a;
 color: black;
 border-radius: 15px;
 }
+
 
 #areasindex{
     display: grid;
