@@ -52,9 +52,15 @@ body{
     align-items:flex-end;
     justify-content:center;
     font-size: 70px;
+<<<<<<< HEAD
     
 
+=======
+    animation: fadeIn;
+    animation-duration: 4s;
+>>>>>>> animaciones
 }
+
 .subtitulo-index {
     font-family: 'Playfair Display',serif;
     color: #8b863a;;
@@ -62,8 +68,13 @@ body{
     align-items: flex-end;
     justify-content: center;
     font-size: 25px;
+<<<<<<< HEAD
     
 
+=======
+    animation: fadeIn;
+    animation-duration: 4s;
+>>>>>>> animaciones
 
 }
 
@@ -83,8 +94,9 @@ body{
     text-decoration: none;
     font-size: 30px;
     color: #8b863a;
-    transition: all 1s ease;
-
+    transition:  1s;
+    animation: fadeIn;
+    animation-duration: 4s;
 }
 
 
@@ -291,6 +303,8 @@ color: #8b863a;
     color: #8b863a;
     transition: all 1s ease;
     column-gap: 35px;
+    animation: fadeIn;
+    animation-duration: 4s;
 
 }
 
@@ -299,6 +313,7 @@ color: #8b863a;
     background-color: #cec877;
     color: black;
     border-radius: 15px;
+    
 }
 
 .barra .titulos {
@@ -313,6 +328,8 @@ color: #8b863a;
     font-family: 'Playfair Display', serif;
     color: #8b863a;
     font-size: 30px;
+    animation: fadeIn;
+    animation-duration: 4s;
 
 
 }
@@ -323,6 +340,8 @@ color: #8b863a;
     padding: 0 0 0 30px;
     font-size: 15px;
     width: 100%;
+    animation: fadeIn;
+    animation-duration: 4s;
 
 
 }
@@ -343,6 +362,7 @@ color: #8b863a;
 
     align-items: center;
     justify-content: center;
+    
 }
 .menupizzaspanes{
     display: flex;
@@ -360,7 +380,11 @@ color: #8b863a;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 15px 20px #000000;
+    transition: all 1s;
+}
 
+.menupizzaspanes .menupizzas:hover{
+    transform: scale(1.1, 1.1);
 
 }
 
@@ -401,8 +425,14 @@ color: #8b863a;
         overflow: hidden;
         border-radius: 10px;
         box-shadow: 0px 15px 20px #000000;
+        transition: all 1s;
 
     }
+
+    .menupizzaspanes .menupanes:hover{
+    transform: scale(1.1, 1.1);
+
+}
 
 .menupizzaspanes .menupanes .capa {
         position: absolute;
@@ -874,6 +904,10 @@ body{
 .pie-pagina {
 
     border-top: solid rgb(37, 34, 34) 2px;
+}
+.pie-pagina .grupo1 .red-social {
+    display: inline-block;
+    column-gap: 5px;
 }
 
 /* MENU */
