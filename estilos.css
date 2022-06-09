@@ -52,13 +52,9 @@ body{
     align-items:flex-end;
     justify-content:center;
     font-size: 70px;
-<<<<<<< HEAD
-    
-
-=======
     animation: fadeIn;
     animation-duration: 4s;
->>>>>>> animaciones
+
 }
 
 .subtitulo-index {
@@ -68,14 +64,8 @@ body{
     align-items: flex-end;
     justify-content: center;
     font-size: 25px;
-<<<<<<< HEAD
-    
-
-=======
     animation: fadeIn;
     animation-duration: 4s;
->>>>>>> animaciones
-
 }
 
 .barramenu{
@@ -461,7 +451,7 @@ color: #8b863a;
     /* MENU PIZZAS */
 
 
-.container {
+.container-pizzas {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
