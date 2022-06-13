@@ -252,8 +252,14 @@ color: #8b863a;
 .container .row .box{
     font-family: 'Playfair Display', serif;
     color: #8b863a;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
+.container .row .box i h3{
+font-family: 'Playfair Display', serif;
+font-size: 20px;
+}
+
+
 .container .row .box article{
     padding-top: 20px;
     display: flex;
