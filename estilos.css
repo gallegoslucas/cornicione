@@ -70,7 +70,7 @@ body{
 
 .barramenu{
     width: 50%;
-    height: 28%;
+    height: 27%;
     display: flex;
     align-items:flex-end;
     justify-content:space-around;
@@ -244,38 +244,38 @@ color: #8b863a;
 
 /* pie con bootstrap */
 
-.container .row{
-    padding-top: 5%;
+.container-fluid .row{
+    padding: 3% 0 0 5%;
 }
 
 
-.container .row .box{
+.container-fluid .row .box{
     font-family: 'Playfair Display', serif;
     color: #8b863a;
     margin-bottom: 25px;
 }
-.container .row .box i h3{
+.container-fluid .row .box i h3{
 font-family: 'Playfair Display', serif;
 font-size: 20px;
 }
 
 
-.container .row .box article{
+.container-fluid .row .box article{
     padding-top: 20px;
     display: flex;
 }
 
-.container .row .box article i{
+.container-fluid .row .box article i{
     align-items: center;
    display: flex;
    gap: 10px;
 }
-.container .row .box .red-social{
+.container-fluid .row .box .red-social{
    
     column-gap: 35px;
 }
 
-.container .row .box .red-social a{
+.container-fluid .row .box .red-social a{
     display: inline-block;
     color: #8b863a;
     background-color: #2d3436;
@@ -289,7 +289,7 @@ font-size: 20px;
     transition: all 1.5s ease;
     column-gap: 80px;
 }
-.container .row .box .red-social a:hover{
+.container-fluid .row .box .red-social a:hover{
     color: #000000;
     background-color: #8b863a;
 }
@@ -739,6 +739,42 @@ font-size: 20px;
         sans-serif;
 }
 
+/* FORMULARIO */
+
+.row{
+    --bs-gutter-x: 0;
+    column-gap: 5px;
+}
+
+.formulario{
+    padding: 2% 0 3% 2%;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #8b863a;
+}
+.subtitulo-index {
+    font-family: 'Playfair Display', serif;
+    color: #8b863a;
+    ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 30px;
+    animation: fadeIn;
+    animation-duration: 4s;
+}
+
+.btn-formulario{
+    color: black;
+    background-color: #8b863a;
+    font-size: 20px;
+}
+
+
+
+
+
+
 /*MEDIA QUERIES */
 
 /*RESPONSIVE DESIGN  */
@@ -762,12 +798,22 @@ body{
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 
 }
+.pie-pagina {
+    width: 100%;
+    border-top: solid #181c1d 1px;
+
+
+}
 
 .fondoindex {
     background-color: none;
     background-image: none;
 }
-
+.fondoindex {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    height: max-content;
+}
 
 .titulo-index {
     height: 33%;
