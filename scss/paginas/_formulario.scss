@@ -1,0 +1,29 @@
+.row {
+    --bs-gutter-x: 0;
+    column-gap: 5px;
+}
+
+.formulario {
+    padding: 2% 0 3% 2%;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #8b863a;
+}
+
+.subtitulo-index {
+    font-family: 'Playfair Display', serif;
+    color: #8b863a;
+    ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 30px;
+    animation: fadeIn;
+    animation-duration: 4s;
+}
+
+.btn-formulario {
+    color: black;
+    background-color: #8b863a;
+    font-size: 20px;
+}

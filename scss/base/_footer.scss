@@ -1,0 +1,68 @@
+/* FOOTER DE TODAS LAS PAGINAS*/
+
+
+.pie-pagina {
+    width: 100%;
+    border-top: solid #2d3436 1px;
+
+    .grupo2 {
+        background-color: black;
+        padding: 15px 10px;
+        text-align: center;
+        color: #8b863a;
+    }
+}
+
+.container-fluid {
+    .row {
+        padding: 3% 0 0 5%;
+
+        .box {
+            font-family: 'Playfair Display', serif;
+            color: #8b863a;
+            margin-bottom: 25px;
+
+            i {
+                h3 {
+                    font-family: 'Playfair Display', serif;
+                    font-size: 20px;
+                }
+            }
+
+            article {
+                padding-top: 20px;
+                display: flex;
+
+                i {
+                    align-items: center;
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+
+            .red-social {
+                column-gap: 35px;
+
+                a {
+                    display: inline-block;
+                    color: #8b863a;
+                    background-color: #2d3436;
+                    line-height: 45px;
+                    height: 45px;
+                    width: 45px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 25px;
+                    border-radius: 10px;
+                    transition: all 1.5s ease;
+                    column-gap: 80px;
+
+                    &:hover {
+                        color: #000000;
+                        background-color: #8b863a;
+                    }
+                }
+            }
+        }
+    }
+}

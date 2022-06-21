@@ -1,0 +1,64 @@
+.barramenu-menu {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 35px;
+    padding-bottom: 20px;
+
+    span {
+        a {
+            font-family: $letra;
+            color: $dorado;
+            text-decoration: none;
+            font-size: 30px;
+            transition: all 1s ease;
+            column-gap: 35px;
+            animation: fadeIn;
+            animation-duration: 4s;
+
+            &:hover {
+                padding: 5px 10px;
+                background-color: #cec877;
+                color: black;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+.barra {
+    display: grid;
+    background-color: black;
+    width: 100%;
+
+    .titulos {
+        display: grid;
+        text-align: start;
+    }
+
+}
+
+.titulo-menu {
+
+    padding: 20px 0 0 20px;
+    font-family: $letra;
+    color: $dorado;
+    font-size: 30px;
+    animation: fadeIn;
+    animation-duration: 4s;
+
+
+}
+
+.subtitulo-menu {
+    font-family: $letra;
+    color: $dorado;
+    padding: 0 0 0 30px;
+    font-size: 15px;
+    width: 100%;
+    animation: fadeIn;
+    animation-duration: 4s;
+
+
+}
