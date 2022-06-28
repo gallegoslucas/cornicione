@@ -16,14 +16,20 @@
 
 }
 
+
+
+@mixin medidaspizzas ($colorpizzas, $anchopizzas, $bordepizzas) {
+    background-color: $colorpizzas;
+    width: $anchopizzas;
+    border-radius: $bordepizzas;
+}
+
 .pizza1 {
+    @include medidaspizzas(#cec877, 500px, 15px);
     grid-area: pizza1;
-    background-color: #cec877;
-    width: 500px;
     display: grid;
     position: relative;
     grid-template-columns: auto;
-    border-radius: 15px;
     box-shadow: 0px 15px 40px #000000;
         .tarjetapizza {
                 background-image: url(../imagenes/pizzas/calabresa.jpg);
@@ -38,64 +44,25 @@
 
 .pizza2 {
     grid-area: pizza2;
-    background-color: #cec877;
-    width: 500px;
-    display: grid;
-    position: relative;
-    grid-template-columns: auto;
-    border-radius: 15px;
-    box-shadow: 0px 15px 40px #000000;
-        .tarjetapizza {
-                background-image: url(../imagenes/pizzas/fugazzeta.jpg);
-                position: relative;
-                width: 100%;
-                height: 500px;
-                border-radius: 15px 15px 0 0;
-                background-position: center center;
-                background-size: cover;
-        
-            }
-            
+    @extend .pizza1;
+    .tarjetapizza {
+            background-image: url(../imagenes/pizzas/fugazzeta.jpg);
+        }
 }
 
 .pizza3 {
     grid-area: pizza3;
-    background-color: #cec877;
-    width: 500px;
-    display: grid;
-    position: relative;
-    grid-template-columns: auto;
-    border-radius: 15px;
-    box-shadow: 0px 15px 40px #000000;
+    @extend .pizza1;
         .tarjetapizza {
                 background-image: url(../imagenes/pizzas/marinara.jpg);
-                position: relative;
-                width: 100%;
-                height: 500px;
-                border-radius: 15px 15px 0 0;
-                background-position: center;
-                background-size: cover;
             }
-
 }
 
 .pizza4 {
     grid-area: pizza4;
-    background-color: #cec877;
-    width: 500px;
-    display: grid;
-    position: relative;
-    grid-template-columns: auto;
-    border-radius: 15px;
-    box-shadow: 0px 15px 40px #000000;
+    @extend .pizza1;
         .tarjetapizza {
                 background-image: url(../imagenes/pizzas/ruculaycrudo.jpg);
-                position: relative;
-                width: 100%;
-                height: 500px;
-                border-radius: 15px 15px 0 0;
-                background-position: center;
-                background-size: cover;
             }
 }
 
@@ -133,3 +100,5 @@
 .precio {
     text-align: right;
 }
+
+/* EXTENDS */
