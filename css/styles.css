@@ -644,7 +644,7 @@ body {
     text-decoration: none;
     font-size: 17px;
     color: #8b863a;
-    transition: all 1s ease;
+    transition: none;
   }
   .flecha {
     width: 100%;
@@ -747,6 +747,30 @@ body {
     width: 100%;
     gap: 25px;
   }
+  .menupizzaspanes .menupizzas {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px #000000;
+    transition: all 1s;
+  }
+  .menupizzaspanes .menupizzas:hover {
+    transform: none;
+  }
+  .menupizzaspanes .menupanes {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px #000000;
+    transition: all 1s;
+  }
+  .menupizzaspanes .menupanes:hover {
+    transform: none;
+  }
   .barramenu-menu {
     width: 100%;
     display: flex;
@@ -758,13 +782,7 @@ body {
     text-decoration: none;
     font-size: 15px;
     color: #8b863a;
-    transition: all 1s ease;
-  }
-  .barramenu-menu span a:hover {
-    padding: 5px 10px;
-    background-color: #cec877;
-    color: black;
-    border-radius: 15px;
+    transition: none;
   }
   .barra {
     display: grid;
@@ -807,17 +825,16 @@ body {
     padding: 0;
     grid-area: pizza1;
     background-color: #cec877;
-    width: 350px;
+    width: 100%;
     display: grid;
-    position: relative;
     grid-template-columns: auto;
     border-radius: 15px;
     box-shadow: 0px 15px 40px #000000;
   }
   .pizza1 .tarjetapizza, .pizza2 .tarjetapizza, .pizza3 .tarjetapizza, .pizza4 .tarjetapizza {
-    background-image: url(./imagenes/pizzas/calabresa.jpg);
+    background-image: url(../imagenes/pizzas/calabresa.jpg);
     position: relative;
-    width: 350px;
+    width: 100%;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center center;
@@ -826,7 +843,7 @@ body {
   .pizza2 {
     grid-area: pizza2;
     background-color: #cec877;
-    width: 350px;
+    width: 100%;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -834,9 +851,9 @@ body {
     box-shadow: 0px 15px 40px #000000;
   }
   .pizza2 .tarjetapizza {
-    background-image: url(./imagenes/pizzas/fugazzeta.jpg);
+    background-image: url(../imagenes/pizzas/fugazzeta.jpg);
     position: relative;
-    width: 350px;
+    width: 100%;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center center;
@@ -845,7 +862,7 @@ body {
   .pizza3 {
     grid-area: pizza3;
     background-color: #cec877;
-    width: 350px;
+    width: 100%;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -853,9 +870,9 @@ body {
     box-shadow: 0px 15px 40px #000000;
   }
   .pizza3 .tarjetapizza {
-    background-image: url(./imagenes/pizzas/marinara.jpg);
+    background-image: url(../imagenes/pizzas/marinara.jpg);
     position: relative;
-    width: 350px;
+    width: 100%;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center;
@@ -864,7 +881,7 @@ body {
   .pizza4 {
     grid-area: pizza4;
     background-color: #cec877;
-    width: 350px;
+    width: 100%;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -872,9 +889,9 @@ body {
     box-shadow: 0px 15px 40px #000000;
   }
   .pizza4 .tarjetapizza {
-    background-image: url(./imagenes/pizzas/ruculaycrudo.jpg);
+    background-image: url(../imagenes/pizzas/ruculaycrudo.jpg);
     position: relative;
-    width: 350px;
+    width: 100%;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center;
@@ -926,7 +943,7 @@ body {
     padding: 0;
     grid-area: pan1;
     background-color: #cec877;
-    width: 350px;
+    width: 100%;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -934,9 +951,9 @@ body {
     box-shadow: 0px 15px 40px #000000;
   }
   .pan1 .tarjetapan {
-    background-image: url(./imagenes/panes/baguette.jpg);
+    background-image: url(../imagenes/panes/baguette.jpg);
     position: relative;
-    height: 350px;
+    height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center center;
     background-size: cover;
@@ -944,7 +961,7 @@ body {
   .pan2 {
     grid-area: pan2;
     background-color: #cec877;
-    width: 350px;
+    width: 100%;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -952,9 +969,9 @@ body {
     box-shadow: 0px 15px 40px #000000;
   }
   .pan2 .tarjetapan {
-    background-image: url(./imagenes/panes/focaccia.jpg);
+    background-image: url(../imagenes/panes/focaccia.jpg);
     position: relative;
-    width: 350px;
+    width: 100%;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center center;
@@ -963,7 +980,7 @@ body {
   .pan3 {
     grid-area: pan3;
     background-color: #cec877;
-    width: 350px;
+    width: 100%;
     display: grid;
     position: relative;
     grid-template-columns: auto;
@@ -971,9 +988,9 @@ body {
     box-shadow: 0px 15px 40px #000000;
   }
   .pan3 .tarjetapan {
-    background-image: url(./imagenes/panes/pandecampo.jpg);
+    background-image: url(../imagenes/panes/pandecampo.jpg);
     position: relative;
-    width: 350px;
+    width: 100%;
     height: 400px;
     border-radius: 15px 15px 0 0;
     background-position: center;
