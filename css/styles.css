@@ -927,6 +927,9 @@ body {
     grid-row-gap: 40px;
     justify-content: center;
   }
+  .container-pizzas h5 {
+    color: black;
+  }
   .pizza1, .pizza2, .pizza3, .pizza4 {
     padding: 0;
     grid-area: pizza1;
@@ -938,7 +941,7 @@ body {
     box-shadow: 0px 15px 40px #000000;
   }
   .pizza1 .tarjetapizza, .pizza2 .tarjetapizza, .pizza3 .tarjetapizza, .pizza4 .tarjetapizza {
-    background-image: url(../imagenes/pizzas/calabresa.jpg);
+    background-image: url(../imagenes/pizzas/marinara.jpg);
     position: relative;
     width: 100%;
     height: 400px;
@@ -976,7 +979,7 @@ body {
     box-shadow: 0px 15px 40px #000000;
   }
   .pizza3 .tarjetapizza {
-    background-image: url(../imagenes/pizzas/marinara.jpg);
+    background-image: url(../imagenes/pizzas/calabresa.jpg);
     position: relative;
     width: 100%;
     height: 400px;
@@ -1044,6 +1047,9 @@ body {
     height: 100%;
     padding: 10% 5% 10% 5%;
     grid-row-gap: 40px;
+  }
+  .container-panes h5 {
+    color: black;
   }
   .pan1, .pan2, .pan3 {
     padding: 0;
