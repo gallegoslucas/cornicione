@@ -7,13 +7,129 @@
 @import "paginas/menu";
 @import "paginas/menupizzas";
 @import "paginas/menupanes";
+@import "paginas/formulario";
 
-@media  (min-width:1024px) {}
+@media  (min-width:1300px) {}
+
+@media (min-width: 720px) and (max-width:1299px){
+    /*INDEX*/
+    #headerindex {
+    background-image: url(../imagenes/pizza-fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    grid-area: cabeza;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px black;
+}
+.titulo-index {
+        height: 33%;
+        width: 100%;
+        font-family: $letra;
+        color: $dorado;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 70px;
+        animation: fadeIn;
+        animation-duration: 4s;
+
+    }
+
+    .subtitulo-index {
+        font-family: $letra;
+        color: $dorado;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 25px;
+        animation: fadeIn;
+        animation-duration: 4s;
+    }
+    .barramenu {
+    width: 70%;
+    height: 35%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    span{
+        a{
+            font-family: $letra;
+            color: $dorado;
+            text-decoration: none;
+            font-size: 30px;
+            
+            transition: 1s;
+            animation: fadeIn;
+            animation-duration: 4s;
+                &:hover{
+                    padding: 5px 10px;
+                    background-color: $dorado;
+                    color: black;
+                    border-radius: 15px;
+                }
+        }
+    }
+
+}
+/*MENU PIZZAS*/
+.container-pizzas {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+        "pizza1 pizza2"
+        "pizza3 pizza4";
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 40px 8%;
+    grid-row-gap: 40px;
+
+
+}
+.pizza1{width: 80%;
+
+.tarjetapizza{
+    width: 100%;
+    height: 400px;
+}
+}
+/*MENU PANES*/
+
+.container-panes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+        "pan1 pan2"
+        "pan3 pan4";
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 40px 8%;
+    grid-row-gap: 40px;
+}
+    
+.pan1 {
+    width: 80%;
+
+    .tarjetapan {
+        width: 100%;
+        height: 400px;
+    }
+}
+}
+
 
 
 
 /* SMARTPHONE */
-@media(max-width:480px) {
+@media(max-width:719px) {
 
     /* INDEX */
     #headerindex {
@@ -558,4 +674,16 @@ $medidasmenus: (
     .precio {
         text-align: right;
     }
+
+    // FORMULARIO
+        .botonformulario {
+            color: black;
+            background-color: #8b863a;
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 2px;
+        }
 }
+
+
+    
