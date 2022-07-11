@@ -5,22 +5,16 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    grid-area: cabeza;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     border: solid 1px black;
+    height: 100%;
 }
 
-#sectionindex {
-    grid-area: cuerpo;
-}
 
-#footerindex {
-    grid-area: pie;
-
-}
 
 .fondoindex {
     background-color: #2d3436;
@@ -112,21 +106,7 @@
 
 }
 
-#areasindex {
-    display: grid;
-    grid-template-areas:
-        /* 2 columnas 3 filas */
-        "cabeza  "
-        /* fila 1 */
-        "cuerpo"
-        /* fila 2 */
-        "pie  "
-        /* fila 3 */
-    ;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100% 100% 20%;
 
-}
 
 .galeriasmart {
     display: grid;
