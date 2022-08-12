@@ -1,32 +1,40 @@
 let total = 0;
+
 const pizzas = [
     { nombre: "Rucula", ingredientes: "Salsa de tomate, mozzarella, rucula, jamon crudo, parmesano", precio: 950 },
     { nombre: "Fugazzeta", ingredientes: "Salsa de tomate, mozzarella, cebolla", precio: 900 },
     { nombre: "Margarita", ingredientes: "Salsa de tomate, ajo, oregano, albahaca, aceite de oliva", precio: 800 },
     { nombre: "Calabresa", ingredientes: "Salsa de tomate, mozzarella, calabresa", precio: 900 },
 ];
-class menu {
-    constructor(nombre, ingredientes, precio, cantidad,) {
+class pedir {
+    constructor(nombre, ingredientes, precio, cantidad) {
         this.nombre = nombre
         this.ingredientes = ingredientes
         this.precio = precio
         this.cantidad = cantidad
     }
 }
-let margarita = new menu("Margarita", "Salsa de tomate, ajo, oregano, albahaca, aceite de oliva", 800, 0)
-let fugazzeta = new menu("Fugazzeta", "Salsa de tomate, mozzarella, cebolla", 900, 0)
-let calabresa = new menu("Calabresa", "Salsa de tomate, mozzarella, calabresa", 900, 0)
-let rucula = new menu("Rucula y jamon crudo", "Salsa de tomate, mozzarella, rucula, jamon crudo, parmesano", 950, 0)
+
+let margarita = new pedir("Margarita", "Salsa de tomate, ajo, oregano, albahaca, aceite de oliva", 800, 0 )
+let fugazzeta = new pedir("Fugazzeta", "Salsa de tomate, mozzarella, cebolla", 900, 0)
+let calabresa = new pedir("Calabresa", "Salsa de tomate, mozzarella, calabresa", 900, 0)
+let rucula = new pedir("Rucula y jamon crudo", "Salsa de tomate, mozzarella, rucula, jamon crudo, parmesano", 950, 0)
 
 // FUNCION AGREGAR PIZZA
 function agregarPizza() {
-    let nombrePizza = prompt("Ingrese nommbre de la pizza").toLowerCase();
+    let nombrePizza = prompt("Ingrese nombre de la pizza").toLowerCase();
     let ingredientesPizza = prompt("Ingrese los ingredientes de la pizza").toLowerCase();
-    let precioPizza = prompt("Ingrese el precio de la pizza").toLowerCase();
-    let pizzaNueva = new menu(nombrePizza, ingredientesPizza, precioPizza, 0);
+    let precioPizza = parseInt (prompt("Ingrese el precio de la pizza"));
+    let pizzaNueva = new aggMenu(nombrePizza, ingredientesPizza, precioPizza);
     pizzas.push(pizzaNueva)
-
 }
+class aggMenu{
+    constructor(nombre, ingredientes, precio)
+  {  this.nombre = nombre
+this.ingredientes = ingredientes
+this.precio = precio}
+}
+
 // FUNCION DE DESCUENTO
 let cupon = true;
 function descuento() {
